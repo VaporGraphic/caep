@@ -1,0 +1,74 @@
+<div class="container-fluid">
+    <div class="row overflow-hidden">
+        <div class="col-auto p-0 ">
+            <app-user-drawer></app-user-drawer>
+        </div>
+        <div class="col">
+            
+            <div class="container my-5">
+                
+                <h1 class="h1 fw-bold">Explorar</h1>
+                <p>Busca nuevos cursos y revisa las novedades que tenemos para ti</p>
+    
+                <div class="input-group border rounded">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text border-0 bg-white " id="my-addon">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                    <input class="form-control border-0" type="search" name="search" placeholder="Buscar curso">
+                </div>
+                
+                <div class="row my-3">
+                    <div class="col-auto px-1" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+                        <span class="badge btn py-0  rounded-pill text-bg-light py-1">
+                            <span class="h6">
+                                Todos
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-4 hvr-grow mb-3" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
+                        <div class="card ">
+                                <img class="cardImage" src="../../../assets/images/user/avatar-webp.webp" alt="">
+                            <div class="card-body">
+                                
+                                
+                                <span class="card-title h6 fw-bold">Nombre del curso</span>
+                                <br>
+                                <span class="card-text small text-muted">Content</span>
+                                <div class="row m-0 mt-2 p-0">
+                                    <div class="col p-0 pe-1">
+                                        <div class="d-grid">
+                                            <button class="btn btn-primary" type="button">Ver más</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col p-0 ps-1">
+                                        <div class="d-grid">
+                                            <button class="btn btn-outline-dark" type="button">
+                                                <i class="bi bi-cart3 "></i>
+                                                Agregar
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="card-img-bottom" src="" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+    
+    
+            </div>
+    
+    
+        </div>
+    </div>
+</div>

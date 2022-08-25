@@ -1,0 +1,55 @@
+<app-login-navbar-widget message="¿No tienes cuenta?" textButton="Crear cuenta" route="/register" ></app-login-navbar-widget>
+
+
+<div class="container d-flex justify-content-center animate__animated animate__fadeIn ">
+   <div class="loginForm w-100">
+    <div class="my-3 text-center">
+        <h1 class="lead fw-bold ">Bienvenido, inicia sesion</h1>
+    </div>
+    <br>
+    
+    <div class="my-3 d-grid ">
+        <button class="btn btn-outline-primary" type="button">
+            <i class="bi bi-google me-1"></i>
+            Iniciar sesion con Google</button>
+    </div>
+
+    <!--DIVIDER-->
+    <div class="row opacity-50">
+        <div class="col">
+            <hr>
+        </div>
+        <div class="col-auto text-muted small">
+            O usar correo
+        </div>
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+
+    <form class="my-3" action="#">
+        <div class="my-3">
+            <label for="email" >Correo electronico</label>
+            <input class="form-control" type="email" name="email" placeholder="Correo electronico" required>
+        </div>
+        <div class="my-3">
+            <label for="email" >Contraseña</label>
+            <input class="form-control" type="password" name="password" placeholder="Contraseña" required>
+        </div>
+        <br>
+        <div class="d-grid ">
+            <button class="btn btn-primary fw-bold" type="submit">Iniciar sesion</button>
+        </div>
+        
+    </form>
+
+    <div class="d-grid my-3">
+        <button [routerLink]="['/register']" class="btn text-primary fw-bold border-0" >¿Olvidaste tu contraseña?</button>
+
+    </div>
+   
+   
+  
+   </div>
+                    
+</div>

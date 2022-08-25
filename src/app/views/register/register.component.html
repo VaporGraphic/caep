@@ -1,0 +1,55 @@
+<app-login-navbar-widget message="¿Tienes una cuenta?" textButton="Iniciar sesion" route="/login" ></app-login-navbar-widget>
+
+<div class="container  d-flex justify-content-center  animate__animated animate__fadeIn">
+    
+    <div class="loginForm w-100">
+        <div class="my-3 text-center">
+            <h1 class="lead fw-bold ">Crear nueva cuenta</h1>
+        </div>
+        <br>
+        
+        <div class="my-3 d-grid ">
+            <button class="btn btn-outline-primary" type="button">
+                <i class="bi bi-google me-1"></i>
+                Crear cuenta con Google</button>
+        </div>
+    
+        <!--DIVIDER-->
+        <div class="row opacity-50">
+            <div class="col">
+                <hr>
+            </div>
+            <div class="col-auto text-muted small">
+                O usar correo
+            </div>
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    
+        <form class="my-3" action="/welcome">
+            <div class="my-3">
+                <label for="email" >Correo electronico</label>
+                <input class="form-control" type="email" name="email" placeholder="Correo electronico" required>
+            </div>
+            <div class="my-3">
+                <label for="email" >Contraseña</label>
+                <input class="form-control" type="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <div class="my-3">
+                <div class="form-check">
+                    <input id="my-input" class="form-check-input" type="checkbox" name="" value="true" required>
+                    <label for="my-input" class="form-check-label">Acepto los terminos y condiciones del servicio</label>
+                </div>
+            </div>
+            <br>
+            <div class="d-grid ">
+                <button class="btn btn-primary fw-bold" type="submit">Crear cuenta</button>
+            </div>
+            
+        </form>
+    
+
+
+
+</div>

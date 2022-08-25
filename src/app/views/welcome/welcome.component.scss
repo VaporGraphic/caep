@@ -1,0 +1,14 @@
+.welcomeForm{
+    max-width: 800px;
+    min-height: 300px;
+}
+
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    background-image: url(../../../assets/images/user/avatar-webp.webp);
+    background-size: cover;
+}
