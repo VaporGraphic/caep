@@ -12,6 +12,8 @@ import { ExploreComponent } from './views/explore/explore.component';
 import { UserDrawerComponent } from './widgets/user-drawer/user-drawer.component';
 import { HomeComponent } from './views/home/home.component';
 
+//DRAG SCROLL
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { HomeComponent } from './views/home/home.component';
     HomeComponent
   ],
   imports: [
+    DragScrollModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule

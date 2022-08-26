@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DragScrollComponent } from 'ngx-drag-scroll';
+
 
 @Component({
   selector: 'app-explore',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExploreComponent implements OnInit {
 
+  @ViewChild('chipsDragList', {read: DragScrollComponent}) chipsDragList!:DragScrollComponent ;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  moveChipsLeft() {
+    this.chipsDragList.moveLeft();
+    console.log("Izquierdo");
+  
+  }
+
+  moveChipsRight() {
+    this.chipsDragList.moveRight();
+    console.log("Derecho");
+  }
+
+  moveChipsTo(index : any) {
+    this.chipsDragList.moveTo(index);
+  }
+
+  
+  
 }
